@@ -1,0 +1,24 @@
+.section-terms {
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.section-terms.animate {
+    opacity: 1;
+}
+
+.section-terms .terms-part {
+    margin-top: 6rem;
+    gap: 8rem;
+}
+
+.terms-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2rem;
+}
+.terms-box i {
+    font-size: 4rem;
+}

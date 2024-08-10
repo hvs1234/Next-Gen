@@ -1,0 +1,135 @@
+.section-service {
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+}
+
+.section-service.animate {
+    opacity: 1;
+}
+
+.section-service .service-main {
+    gap: 0;
+    border-radius: 10px;
+    border: 1px solid var(--grey2);
+    margin-top: 6rem;
+}
+
+.service-more {
+    margin-bottom: 9rem;
+}
+
+.section-servicepage .servicepage-heading {
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.service-more .main-para {
+    font-size: 3rem;
+    max-width: 60%;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 9rem;
+}
+
+.service-box {
+    border: 1px solid var(--grey2);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* margin-top: 4rem; */
+}
+
+.section-service .common-para {
+    text-align: center;
+}
+
+.service-box.full-width {
+    grid-column: 1/-1;
+}
+
+.service-icon {
+    display: flex;
+    justify-content: end;
+    opacity: 0.5;
+    margin-right: 4rem;
+}
+
+.service-icon img {
+    width: auto;
+    filter: brightness(0.2);
+}
+
+.service-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 12rem;
+}
+
+.service-title .inner-heading {
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0;
+    font-size: 2.5rem;
+}
+
+.service-title .inner-para {
+    margin-bottom: auto;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.services-page-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.servicepage-content {
+    margin-top: 10rem;
+}
+
+.servicepage-data {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.servicepage-data .common-heading {
+    text-align: left;
+    margin: 0;
+    font-size: 6rem;
+    max-width: 100%;
+}
+
+.servicepage-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicepage-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.servicepage-data-order {
+    order: 2;
+}
+
+.servicepage-para-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.servicepage-para-box .common-para{
+    margin: 0;
+}

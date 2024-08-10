@@ -1,0 +1,155 @@
+.section-hero {
+    transition: all 0.4s linear;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: var(--gradient2);
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(134, 234, 134);
+    opacity: 0;
+    transform: scale(0);
+    animation: none;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 30%;
+    background-color: rgb(154, 215, 235);
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 60%;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    left: 40%;
+}
+
+.circle4 {
+    width: 250px;
+    height: 250px;
+    top: 80%;
+    left: 20%;
+    background-color: rgb(154, 215, 235);
+}
+
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
+
+.animate .circle1 {
+    animation: pop-up 3s ease-out 0.2s forwards;
+}
+
+.animate .circle2 {
+    animation: pop-up 3s ease-out 0.2s forwards;
+}
+
+.animate .circle3 {
+    animation: pop-up 3s ease-out 0.2s forwards;
+}
+
+.animate .circle4 {
+    animation: pop-up 3s ease-out 0.6s forwards;
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    z-index: 1;
+    animation: slideIn 1s ease-in-out;
+    transition: all 1s linear;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-heading {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 8rem;
+    max-width: 80rem;
+    font-weight: 500;
+    color: var(--black);
+    opacity: 1;
+}
+
+.hero-para {
+    line-height: 1.8;
+    font-size: 3rem;
+    max-width: 100rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hero-more {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+}
+
+.hero-more p {
+    font-weight: 100;
+    color: var(--black);
+    text-align: center;
+    font-size: 2.2rem;
+    -webkit-text-stroke: 1px var(--black);
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+}

@@ -1,0 +1,579 @@
+/* 1500px */
+
+@media (max-width: 94em) {
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        max-width: 120rem;
+    }
+
+    .hero-content {
+        height: 100%;
+    }
+
+    .hero-heading {
+        font-size: 7rem;
+        max-width: 70rem;
+    }
+
+    .hero-para {
+        max-width: 80rem;
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+
+    .trust-heading {
+        max-width: 80%;
+    }
+
+    .common-para {
+        font-size: 2.5rem;
+    }
+
+    .f-main {
+        gap: 10rem;
+        margin: 0 auto;
+    }
+
+    .main-heading {
+        font-size: 3.5rem;
+    }
+
+    .inner-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-heading {
+        font-size: 6rem;
+        max-width: 120rem;
+    }
+
+    .about-more .main-para {
+        max-width: 100%;
+    }
+}
+
+/* 1300px */
+
+@media (max-width: 1300px) {
+    .header {
+        z-index: 9999;
+        padding: 1rem 4rem;
+    }
+
+    .sticky {
+        padding: 1rem 4rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+        transition: all 0.3s linear;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 0 1px 1px rgb(208, 208, 208);
+        pointer-events: none;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+
+    .navlink {
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .dropdown-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book {
+        padding: 0;
+        border: 0;
+    }
+
+    .book:hover {
+        padding: 0;
+        border: 0;
+        background: none;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 1001;
+        color: var(--black);
+        padding: 1rem 1rem;
+        position: relative;
+    }
+
+    .mobile-nav-icon {
+        font-size: 3rem;
+    }
+
+    .active .navbar {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .active .mobile-nav-icon[name="ham"] {
+        display: none;
+    }
+
+    .active .mobile-nav-icon[name="cross"] {
+        display: block;
+        color: var(--black)
+    }
+
+    .section-hometrust .main-para {
+        font-size: 2.5rem;
+    }
+
+    .servicepage-main {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .servicepage-data-order {
+        order: 1;
+    }
+    .servicepage-img-order {
+        order: 2;
+    }
+}
+
+/* 1180px */
+
+@media (max-width: 74em) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero-para {
+        max-width: 70rem;
+    }
+
+    .service-more .main-para {
+        max-width: 100%;
+    }
+
+}
+
+/* 990px */
+
+@media (max-width: 62em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 100rem;
+    }
+
+    .hero-heading {
+        font-size: 7rem;
+    }
+
+    .main-heading {
+        font-size: 3.5rem;
+    }
+
+    .section-hometrust .main-para {
+        max-width: 90%;
+    }
+
+    .common-heading {
+        font-size: 5rem;
+    }
+
+    .common-para {
+        font-size: 2.5rem;
+    }
+
+    .about-heading {
+        max-width: 80rem;
+    }
+
+    .about-para {
+        max-width: 80rem;
+    }
+
+    .blog-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .f-main {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .f-content {
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 8rem;
+        align-items: start;
+    }
+
+    .f-part {
+        margin: 0;
+    }
+}
+
+/* 900px */
+
+@media (max-width: 57em) {
+
+    .seehow-data h2 {
+        font-size: 4rem;
+    }
+
+    .seehow-data .book {
+        border: 1px solid var(--black);
+        padding: 1rem 4rem;
+    }
+
+}
+
+/* 850px */
+
+@media (max-width: 54em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 80rem;
+    }
+
+    .trust-heading {
+        font-size: 4rem;
+        max-width: 90%;
+    }
+
+    .common-heading {
+        font-size: 5rem;
+        max-width: 100%;
+    }
+
+    .about-content-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-service .common-para {
+        font-size: 2.2rem;
+    }
+
+    .section-hometrust .main-para {
+        max-width: 100%;
+        font-size: 2.2rem;
+    }
+
+    .section-seehow .main-heading {
+        font-size: 5rem;
+        max-width: 100%;
+    }
+
+    .pulse-circle-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+        .pulse-data {
+            h3 {
+                max-width: 60%;
+            }
+        }
+    }
+
+
+    .service-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .capable-main {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .section-capable .box-whole-line {
+        margin: 0;
+    }
+
+    .section-capable .capable-main {
+        margin-bottom: 2rem;
+    }
+
+    .capable-box .inner-heading {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+
+    .data-col {
+        margin-top: 6rem;
+    }
+
+    .img-col {
+        margin-bottom: 4rem;
+    }
+
+    .capable-box .inner-para {
+        font-size: 2.2rem;
+    }
+
+    .capable-box {
+        order: 1;
+    }
+
+    .capable-img {
+        order: 2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .terms-part {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .seehow-data h2 {
+        font-size: 3rem;
+    }
+}
+
+/* 670px */
+
+@media (max-width: 42em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 60rem;
+    }
+
+    .hero-heading {
+        max-width: 65rem;
+        font-size: 6rem;
+    }
+
+    .hero-para {
+        max-width: 70rem;
+        font-size: 1.8rem;
+    }
+
+    .trust-heading {
+        max-width: 100%;
+    }
+
+    .main-heading {
+        font-size: 3rem;
+    }
+
+    .about-heading {
+        font-size: 5rem;
+    }
+
+    .seehow-data .main-heading {
+        font-size: 5rem;
+        line-height: 1.4;
+    }
+}
+
+/* 500px */
+
+@media (max-width: 32em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 45rem;
+    }
+
+    .logo-para {
+        font-size: 3rem;
+    }
+
+    .mobile-navbar-btn {
+        padding: 1rem 1rem;
+    }
+
+    .navbar ul {
+        padding: 4rem 4rem 4rem 4rem;
+    }
+
+    .hero-heading {
+        max-width: 50rem;
+        font-size: 5rem;
+    }
+
+    .hero-para {
+        max-width: 50rem;
+        font-size: 2rem;
+    }
+
+    .hero-more p {
+        font-size: 1.8rem;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .main-para {
+        font-size: 1.8rem;
+    }
+
+    .inner-heading {
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+
+    .trust-heading {
+        font-size: 3rem;
+    }
+
+    .common-heading {
+        font-size: 3rem;
+    }
+
+    .section-service .common-para {
+        font-size: 2rem;
+    }
+
+    .section-servicepage .servicepage-heading {
+        line-height: 1.5;
+        font-size: 4rem;
+    }
+
+    .section-hometrust .main-para {
+        font-size: 2rem;
+    }
+
+    .about-heading {
+        font-size: 5rem;
+        line-height: 2;
+    }
+
+    .about-more .main-para {
+        font-size: 2.5rem;
+    }
+
+    .section-hometrust {
+        .pulse-circle-container {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+
+            .pulse-data {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h3 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .contact-part .contact-heading {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .section-careers .careers-heading {
+        font-size: 5rem;
+        max-width: 100%;
+        line-height: 1.4;
+    }
+
+    .f-content {
+        flex-direction: column;
+    }
+
+    .copyright {
+        padding: 1rem 1rem;
+    }
+
+    .seehow-data .main-heading {
+        font-size: 3.5rem;
+        line-height: 1.4;
+        max-width: 100%;
+    }
+    .servicepage-data .common-heading {
+        font-size: 4rem;
+    }
+
+    .section-blogpage .blog-heading {
+        font-size: 5rem;
+        line-height: 1.4;
+    }
+    .section-product .product-heading {
+        font-size: 4rem;
+    }
+}
+
+/* 400px */
+
+@media (max-width: 25em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 40rem;
+    }
+
+    .hero-heading {
+        font-size: 4rem;
+        max-width: 40rem;
+    }
+
+    .hero-para {
+        max-width: 40rem;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+        line-height: 2;
+    }
+
+    .main-para {
+        font-size: 1.6rem;
+    }
+
+    .about-more .main-para {
+        font-size: 2.5rem;
+    }
+
+    .seehow-data .main-heading {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+
+    .section-service .common-para {
+        font-size: 1.8rem;
+    }
+
+    .seehow-link {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,144 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1100;
+    transition: all 0.4s linear;
+}
+
+.sticky {
+    padding: 1rem 9rem;
+    background: var(--white);
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 1px rgb(216, 216, 216);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    position: relative;
+}
+
+.logo-main {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    z-index: 1009;
+}
+
+.logo-main img {
+    width: 100%;
+}
+
+
+.logo-para {
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.logo-para2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.logo-para span {
+    color: var(--crimson);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.navlink {
+    color: var(--black);
+    font-size: 1.8rem;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    font-weight: 400;
+    color: var(--grey3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navlink:hover {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.book {
+    border: 1px solid var(--black);
+    border-radius: 40px;
+    padding: 1rem 4rem;
+}
+
+.book:hover {
+    padding: 1rem 4rem;
+    background: black;
+    color: var(--white);
+    transition: all 0.1s linear;
+}
+
+.mobile-navbar-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="cross"] {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-main:hover {
+    border-bottom: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: auto;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    border: 1px solid var(--grey2);
+    z-index: 1000;
+    border-radius: 10px;
+    list-style: none;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    overflow: hidden;
+    transition: all 0.4s linear;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--black);
+    font-size: 1.8rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.dropdown-link:hover {
+    text-decoration: underline;
+}

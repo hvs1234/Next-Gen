@@ -1,0 +1,10 @@
+.section-product {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.4s linear;
+}
+
+.section-product .product-heading {
+    font-weight: 500;
+}

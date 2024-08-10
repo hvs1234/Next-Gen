@@ -1,0 +1,127 @@
+.section-seehow {
+    transition: all 0.4s linear;
+    padding: 12rem 0;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 9rem 0;
+    background: var(--white);
+}
+
+.seehow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient2);
+    opacity: 1;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(134, 234, 134);
+    opacity: 0;
+    transform: scale(0);
+    animation: none;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 30%;
+    background-color: rgb(154, 215, 235);
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 60%;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    left: 40%;
+}
+
+.circle4 {
+    width: 250px;
+    height: 250px;
+    top: 80%;
+    left: 20%;
+    background-color: rgb(154, 215, 235);
+}
+
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
+
+.animate .circle1 {
+    animation: pop-up 3s ease-out 0.2s forwards;
+}
+
+.animate .circle2 {
+    animation: pop-up 3s ease-out 0.4s forwards;
+}
+
+.animate .circle3 {
+    animation: pop-up 3s ease-out 0.6s forwards;
+}
+
+.animate .circle4 {
+    animation: pop-up 3s ease-out 0.8s forwards;
+}
+
+.seehow-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.seehow-data .main-heading {
+    max-width: 80%;
+    font-size: 6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgb(220, 220, 220);
+}
+
+.seehow-link {
+    font-size: 2.5rem;
+    font-weight: 300;
+    border: 2px solid var(--black);
+    padding: 1.5rem 6rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.seehow-link:hover {
+    background: var(--black);
+    color: var(--white);
+    padding: 1.5rem 6rem;
+}

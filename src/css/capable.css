@@ -1,0 +1,65 @@
+.section-capable {
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    background: var(--white);
+}
+
+.section-capable.animate {
+    opacity: 1;
+}
+
+.section-capable .capable-main {
+    gap: 6rem;
+    margin-bottom: 10rem;
+}
+
+.section-capable .capable-last {
+    gap: 6rem;
+    margin-bottom: 10rem;
+}
+
+.capable-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.capable-box .top-heading {
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: rgb(235, 189, 189);
+}
+
+.capable-box .inner-heading {
+    font-weight: 500;
+    font-size: 5rem;
+    letter-spacing: 1px;
+}
+
+.capable-box .inner-para {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.capable-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capable-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.data-col {
+    order: 2;
+}
+
+.img-col {
+    order: 1;
+}
